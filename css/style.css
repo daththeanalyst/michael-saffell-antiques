@@ -145,10 +145,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero__pattern {
   position: absolute;
   inset: 0;
-  opacity: 0.05;
-  background-image:
-    repeating-linear-gradient(45deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 20px),
-    repeating-linear-gradient(-45deg, var(--gold) 0, var(--gold) 1px, transparent 1px, transparent 20px);
+  background: rgba(26, 35, 50, 0.55);
   z-index: 1;
 }
 
