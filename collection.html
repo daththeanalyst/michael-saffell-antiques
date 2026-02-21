@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collection — Michael Saffell Antiques | Antique British Tins</title>
+  <meta name="description" content="Browse our collection of antique British biscuit tins, tobacco tins, advertising items and decorative collectibles.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .filter-btn {
+      padding: 8px 24px;
+      border: 1.5px solid var(--gold);
+      background: transparent;
+      color: var(--navy);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--gold);
+      color: var(--navy);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav__logo">Michael Saffell <span>Antiques</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collection.html" class="active">Collection</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="appointment.html">Visit by Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>Our Collection</h1>
+    <p>Antique British tins, advertising items and decorative collectibles</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- FILTER BAR -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All Pieces</button>
+        <button class="filter-btn" data-filter="biscuit">Biscuit Tins</button>
+        <button class="filter-btn" data-filter="tobacco">Tobacco Tins</button>
+        <button class="filter-btn" data-filter="advertising">Advertising</button>
+        <button class="filter-btn" data-filter="decorative">Decorative</button>
+        <button class="filter-btn" data-filter="confectionery">Confectionery</button>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="biscuit">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #b8935a, #8b6914); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Huntley & Palmers Reading Biscuits</h3>
+            <p>Biscuit Tins &middot; c.1900</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="biscuit">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #c0392b, #e67e22); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Crawford's Shortbread Tin</h3>
+            <p>Biscuit Tins &middot; c.1920</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="biscuit">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #d4b07a, #8b4513); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Peek Freans Assorted</h3>
+            <p>Biscuit Tins &middot; c.1910</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="tobacco">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #1a2332, #4a6741); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Player's Navy Cut</h3>
+            <p>Tobacco Tins &middot; c.1930</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="tobacco">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #d4b07a, #1a2332); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Gold Flake Cigarettes</h3>
+            <p>Tobacco Tins &middot; c.1925</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="tobacco">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #2c3e50, #b8935a); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Senior Service Round Tin</h3>
+            <p>Tobacco Tins &middot; c.1940</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="advertising">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #2c3e50, #1a2332); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Enamel Advertising Sign</h3>
+            <p>Advertising &middot; c.1890</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="advertising">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #e74c3c, #2c3e50); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>OXO Showcard</h3>
+            <p>Advertising &middot; c.1920</p>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="decorative">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #8e44ad, #b8935a); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Art Nouveau Sweet Tin</h3>
+            <p>Decorative &middot; c.1905</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="confectionery">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #e67e22, #d4b07a); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Cadbury's Chocolate Tin</h3>
+            <p>Confectionery &middot; c.1915</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="confectionery">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #27ae60, #d4b07a); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Rowntree's Cocoa Tin</h3>
+            <p>Confectionery &middot; c.1910</p>
+          </div>
+        </div>
+        <div class="gallery-item" data-category="decorative">
+          <div class="gallery-item__img" style="background: linear-gradient(135deg, #d4b07a, #8e44ad); width:100%; height:100%;"></div>
+          <div class="gallery-item__overlay">
+            <h3>Edwardian Tea Caddy</h3>
+            <p>Decorative &middot; c.1908</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--dark" style="text-align: center;">
+    <div class="container">
+      <p class="section__label">Interested in a Piece?</p>
+      <h2 class="section__title">Visit Us by Appointment</h2>
+      <p class="section__desc" style="margin-bottom: 32px;">Our collection changes regularly. Book a visit to browse in person — we love sharing the stories behind each piece.</p>
+      <a href="appointment.html" class="btn btn--gold">Book Appointment</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__brand">Michael Saffell <span>Antiques</span></p>
+          <p class="footer__desc">Specialist dealer in antique British tins and collectibles. Trading from Bath since 1975.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="collection.html">Collection</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="appointment.html">Visit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>3 Walcot Buildings</li>
+            <li>London Road, Bath BA1 6AD</li>
+            <li>Tel: 01225 315857</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">&copy; 2026 Michael Saffell Antiques. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
